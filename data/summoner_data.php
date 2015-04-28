@@ -2,10 +2,8 @@
 
 	# Includes and requires
 	require_once('data/summoner_data.php');
+    require_once('conf/config.php');
 
-	#definitions
-	$apikey = "apikey";
-	$region = "euw";
 	#$summoner_name = "whitetrill";
 	$summoner_name= $_POST['summonername'];
 	$region= $_POST['region'];
