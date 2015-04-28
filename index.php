@@ -10,13 +10,15 @@
 		<?php
 			require_once('data/summoner_data.php');
 		?>
-        <div id="logo"> 
-            <img src="img/buuky_logo.png" alt="Buuky Logo" width="200px"> 
-            <h1>Buuky League of Legends</h1>
+        <div id="header"> 
+            <div id="logo">
+                <img src="img/buuky_logo.png" alt="Buuky Logo" width="200px"> 
+            </div>
+                <h1>Buuky League of Legends</h1>
         </div>
         <div id="main">
             <form method="post" action="">
-                <select name="region" id="region">
+                <select name="region" id="region" class="dropdownregion"> 
                     <option value="euw">EU West</option>
                     <option value="br">Brasil</option>
                     <option value="eune">EU North</option>
@@ -28,13 +30,18 @@
                     <option value="tr">Turkey</option>
                     <option value="ru">Russia</option>
                 </select>
-                <input type="text" name="summonername">
-                <input type="submit">
+                <input type="text" name="summonername" class="inputbox">
+                <input type="submit" class="button" name="Submit" value="Submit">
             </form>
             </br>
             <?php
-                echo "Summoner ID:" . $summonerid;
+                echo "Summoner ID: " . $summonerid;
                 summoner_id($region, $summoner_name, $apikey);
+            ?>
+            </br>
+            <?php
+                echo "Summoner Level: " . $summonerid;
+                summoner_level($region, $summoner_name, $apikey);
             ?>
         </div>
     </div>
