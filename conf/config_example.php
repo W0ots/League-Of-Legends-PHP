@@ -1,9 +1,8 @@
 
-
 <?php
-#Config file
+	#Config file
 
-apikey = "Insert appi key "
+	apikey = "Insert appi key "
 
   
 ?>
