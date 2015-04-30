@@ -1,4 +1,8 @@
 # League-Of-Legends-PHP
 
-This project contains various php functions to call League-Of-Legends Stats
+This project contains various php functions to call League-Of-Legends Stats.
+
 ![Alt text](img/buuky_layout.png?raw=true "Layout")
+
+
+# This is not ready to use yet.
