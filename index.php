@@ -8,7 +8,10 @@
 	<body>
     <div id="wrapper">
 		<?php
+		if (isset($_GET['summonername']))
+			{
 			require_once('data/summoner_data.php');
+			}
 		?>
         <div id="header"> 
             <div id="logo">
@@ -35,13 +38,19 @@
             </form>
             </br>
             <?php
+			if (isset($_GET['summonername']))
+			{
                 echo "Summoner ID: " . $summonerid;
                 summoner_id($region, $summoner_name, $apikey);
+			}
             ?>
             </br>
             <?php
+				if (isset($_GET['summonername']))
+			{
                 echo "Summoner Level: " . $summonerid;
                 summoner_level($region, $summoner_name, $apikey);
+			}
             ?>
         </div>
     </div>
